@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title></title>
+    <title>รายชื่อสมาชิก</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
@@ -12,54 +12,67 @@
             background-color: #000000;
         }
 
-        .center {
-            text-align: center;
+        /* จัดเรียงรูปและข้อความ */
+        .members {
+            display: flex;
+            flex-wrap: wrap;
+            /* ถ้าเกินจอจะขึ้นบรรทัดใหม่ */
+            justify-content: center;
+            gap: 20px;
         }
 
+        /* คำสั่งในการทำการ์ด */
+        .card {
+            background: #5c4d4d8f;
+            border-radius: 12px;
+            padding: 35px;
+            width: 300px;
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
     <h1 style="text-align: center;">ชื่อสมาชิกแต่ละคน</h1>
     <!-- 67157971 Thanaeasuan Sritubtim (PM)   -->
-    <div class="center">
-        <img src="stdempimg .jpg" alt="" width="300px">
-        <h1>รหัสนักศึกษา : 67157971</h1>
-        <h1>ชื่อ : Thanaesuan Sritubtim</h1>
-        <h1>คำโดนใจ : หล่อรวย</h1>
-    </div>
-
-    <!-- 67177222 Teeravat Xu -->
-        <div class="profile2">
-        <img src="Teeravat.jpg.gif" alt="" width="300px">
-        <h1>รหัสนักศึกษา : 67177222 </h1>
-        <h1>ชื่อ : Teeravat Xu</h1>
-        <h1>ยามใดที่เราทุกข์ ชาไข่มุกคือพลัง</h1>
-    </div>
-    <!-- 67140410 Saranyu Saetang -->
-     <img src="saranyu.jpg" alt="" style="width: 300px;">
-    <h1>รหัสนักศึกษา : 67140410</h1>
-    <h1>ชื่อ : Saranyu Saetang</h1>
-    <h1>คำโดนใจ : หล่อไม่หล่อไม่รู้ แต่ไข่น่ารัก</h1>
-    <!-- 67124614 Woraphon Saengphanit -->
-     <style>
-        .profile3 {
-            text-align: center;
-            margin-top: 600px;
-        }
-     </style>
-     <div class="profile3">
-     <img src="stdempimg.jpg" alt="" width="300px">
-     <p>67124614 woraphon Saengphanit</p>
-     <p>ไม่เก่งไม่เก๋าในกระเป๋ามีเเต่หนังสือ</p>
+    <div class="members">
+        <div class="card">
+            <img src="stdempimg .jpg" alt="" width="300px">
+            <h1>รหัสนักศึกษา : 67157971</h1>
+            <h1>ชื่อ : Thanaesuan Sritubtim</h1>
+            <h1>คำโดนใจ : หล่อรวย</h1>
         </div>
 
-    <!-- 67137113 Apichayut Rosukit -->
-     <div style="text-align: right;">
-      <img src="apichayut.jpg" alt="" width="300px" />
-      <h1>รหัสนักศึกษา : 67137113</h1>
-      <h1>ชื่อ : Apichayut Rosukit</h1>
-      <h1>คำโดนใจ : NASAก็พาเธอกลับมาไม่ได้ เพราะเธอนอกใจไม่ได้ไปนอกโลก</h1>
+        <!-- 67177222 Teeravat Xu -->
+        <div class="card">
+            <img src="Teeravat.jpg.gif" alt="" width="300px">
+            <h1>รหัสนักศึกษา : 67177222 </h1>
+            <h1>ชื่อ : Teeravat Xu</h1>
+            <h1>คำโดนใจ : ยามใดที่เราทุกข์ ชาไข่มุกคือพลัง</h1>
+        </div>
+        <!-- 67140410 Saranyu Saetang -->
+        <div class="card">
+            <img src="saranyu.jpg" alt="" style="width: 300px;">
+            <h1>รหัสนักศึกษา : 67140410</h1>
+            <h1>ชื่อ : Saranyu Saetang</h1>
+            <h1>คำโดนใจ : หล่อไม่หล่อไม่รู้ แต่ไข่น่ารัก</h1>
+        </div>
+        <!-- 67124614 Woraphon Saengphanit -->
+
+        <div class="card">
+            <img src="stdempimg.jpg" alt="" width="300px">
+            <h1>รหัสนักศึกษา : 67124614 </h1>
+            <h1>ชื่อ : Woraphon Saengphanit</h1>
+            <h1>คำโดนใจ : ไม่เก่งไม่เก๋าในกระเป๋ามีเเต่หนังสือ</h1>
+        </div>
+
+        <!-- 67137113 Apichayut Rosukit -->
+        <div class="card">
+            <img src="apichayut.jpg" alt="" width="300px" />
+            <h1>รหัสนักศึกษา : 67137113</h1>
+            <h1>ชื่อ : Apichayut Rosukit</h1>
+            <h1>คำโดนใจ : NASAก็พาเธอกลับมาไม่ได้ เพราะเธอนอกใจไม่ได้ไปนอกโลก</h1>
+        </div>
     </div>
 </body>
 
